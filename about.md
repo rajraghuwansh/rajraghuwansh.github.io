@@ -3,10 +3,7 @@
 
 #### **Technical Skills:** Python, SQL, AWS, C++, MATLAB, PySpark, TensorFlow, PyTorch, Tableau, Databricks,git,  putty, OOP
 
----
-
-## **Work Experience**
-
+---a
 ### Machine Learning Engineer @ Stellantis (Full Time)(Jun2023 - Present)   
 - Designed and implemented **end-to-end MLOps pipelines** using **PySpark** and **MLflow** in **Databricks**.  
 - Optimized code for performance and scalability, ensuring seamless integration with production systems.  
