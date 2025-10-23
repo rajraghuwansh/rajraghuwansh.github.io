@@ -22,13 +22,11 @@ jobs:
 
       # Install Jekyll and Bundler
       - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
+        run: gem install jekyll kramdown
 
       # Build the site into _site
       - name: Build Jekyll site
-        run: bundle exec jekyll build --destination _site
+        run: jekyll build --destination _site
 
       # Deploy ONLY the _site folder to public repo
       - name: Deploy to public repo
