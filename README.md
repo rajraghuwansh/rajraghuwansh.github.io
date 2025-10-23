@@ -1,25 +1,23 @@
-# Machine learning operations at Stellantis, Paris, France
 
-#### **Technical Skills:** Python, SQL, AWS, C++, MATLAB, PySpark, TensorFlow, PyTorch, Tableau, Databricks,git,  putty, OOP
-
+## About
 ---a
-### Machine Learning Engineer @ Stellantis (Full Time)(Jun2023 - Present)   
+### Machine Learning Engineer @ Stellantis (Jun2023 - Sep2025)   
 - Designed and implemented **end-to-end MLOps pipelines** using **PySpark** and **MLflow** in **Databricks**.  
 - Optimized code for performance and scalability, ensuring seamless integration with production systems.  
 - Collaborated with cross-functional teams to deploy machine learning models into production environments.
  
 
-### **Data Scientist @ ZestMoney (Full Time)**  
+### **Data Scientist @ ZestMoney (Jun2020 - Aug2021)  **  
 - Developed **financial models** for assessing **lender risk**, **customer lifetime value**, and **default scores** in the Buy Now Pay Later (BNPL) domain.  
 - Worked closely with the Credit and Risk Team to improve decision-making processes using data-driven insights.
 
-### **Business Intelligence and Data Engineering Intern @ Amazon**  
+### **Business Intelligence Intern @ Amazon (july2022 - Jan2023)**  
 - Reduced forecast processing time by **50%** through code optimization and deployment on **AWS** using **EC2** and **Streamlit**.  
 - Gained hands-on experience with **AWS tools** like **SageMaker**, **QuickSight**, **Redshift**, and **DataNet**.
 
 ---
 
-## **Projects**
+## Projects
 
 ### **Graph Neural Network for Finite Element Analysis**  
 - Built a **Graph Neural Network (GNN)**-based surrogate model to accelerate parameter search in **Finite Element Analysis (FEA)**.  
@@ -54,7 +52,7 @@
 
 ---
 
-## **Education**
+## Education**
 
 ### **Double MSc in Data Science and Business Analytics**  
 **CentraleSupélec & ESSEC Business School, Paris, France**  
@@ -70,7 +68,4 @@
 
 ---
 
-## **Achievements**  
-- Cleared the **IIT JEE Examination**, one of the most competitive engineering exams in India (top **0.7%** of 1.5 million candidates).  
-- Earned a **Diploma in Tabla** (classical percussion instrument) from **Prayag Raj Samhiti**, Varanasi.
 
