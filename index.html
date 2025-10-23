@@ -22,14 +22,15 @@
 
 <main class="container">
 
-  <section id="intro">
-    {% assign home_page = site.pages | where: "title", "Home" | first %}
-    {% if home_page %}
-      {{ home_page.content | markdownify }}
-    {% else %}
-      <p>Welcome to my personal website. I’m a PhD student passionate about AI, Mathematics, and their intersection.</p>
-    {% endif %}
-  </section>
+ <section id="intro">
+  {% assign home_page = site.pages | where: "title", "Home" | first %}
+  {% if home_page %}
+    {{ home_page.content | markdownify }}
+  {% else %}
+    <p>Welcome to my personal website. I’m a PhD student passionate about AI, Mathematics, and their intersection.</p>
+  {% endif %}
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
