@@ -21,10 +21,12 @@
 
 
 <main class="container">
+  
 <section id="about">
-<h2>About</h2>
-<p>Hi — I'm Raghuwansh, a PhD student interested in Geometric and Toplogical Deep Learning and Mathematics pertaining to them. Welcome to my personal site.</p>
-</section>
+    <h2>About</h2>
+    {% assign about_page = site.pages | where: "title", "About" | first %}
+    {{ about_page.content | markdownify }}
+  </section>
 
 
 <section id="projects">
