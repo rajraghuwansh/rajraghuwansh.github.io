@@ -8,56 +8,58 @@
 </head>
 <body>
 <header class="site-header">
-<div class="container">
-<h1>Raghuwansh</h1>
-<p class="subtitle">PhD student — AI &amp; Math</p>
-<nav>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
+  <div class="container">
+    <h1>Raghuwansh</h1>
+    <p class="subtitle">PhD student — AI &amp; Math</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-
 <main class="container">
-  
+
 <section id="about">
   <h2>About</h2>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<div id="README"></div>
-<script>
-fetch('README.md')
-    .then(response => response.text())
-    .then(text => {
-        document.getElementById('readme').innerHTML = marked.parse(text);
-    });
-</script>
+  <div id="README">Loading README...</div>
 </section>
-
 
 <section id="projects">
-<h2>Projects</h2>
-<ul>
-<li><a href="https://github.com/rajraghuwansh">GitHub profile</a></li>
-<li><a href="#">Project or paper link</a></li>
-</ul>
+  <h2>Projects</h2>
+  <ul>
+    <li><a href="https://github.com/rajraghuwansh">GitHub profile</a></li>
+    <li><a href="#">Project or paper link</a></li>
+  </ul>
 </section>
-
 
 <section id="contact">
-<h2>Contact</h2>
-<p>Email: <a href="mailto:your-email@example.com">raghuwansh.rajm@gmail.com</a></p>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:your-email@example.com">raghuwansh.rajm@gmail.com</a></p>
 </section>
+
 </main>
 
-
 <footer class="site-footer">
-<div class="container">© <span id="year"></span> Raghuwansh</div>
+  <div class="container">© <span id="year"></span> Raghuwansh</div>
 </footer>
 
-
+<!-- Marked.js for Markdown -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
+fetch('README.md')
+  .then(response => {
+      if (!response.ok) throw new Error('README.md not found');
+      return response.text();
+  })
+  .then(text => {
+      document.getElementById('README').innerHTML = marked.parse(text);
+  })
+  .catch(err => {
+      document.getElementById('README').innerHTML = '<p><strong>README.md not found or failed to load.</strong></p>';
+  });
+// Set year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
