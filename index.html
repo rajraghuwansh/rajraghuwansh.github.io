@@ -24,12 +24,15 @@
   
 <section id="about">
   <h2>About</h2>
-  {% assign about_page = site.pages | where: "title", "About" | first %}
-  {% if about_page %}
-    {{ about_page.content | markdownify }}
-  {% else %}
-    <p>About information coming soon.</p>
-  {% endif %}
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<div id="README"></div>
+<script>
+fetch('README.md')
+    .then(response => response.text())
+    .then(text => {
+        document.getElementById('readme').innerHTML = marked.parse(text);
+    });
+</script>
 </section>
 
 
