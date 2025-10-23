@@ -1,1 +1,8 @@
-
+title: Raghuwansh
+email: "raghuwansh.rajm@gmail.com"
+description: "Personal website for Raghuwansh — AI & Math"
+baseurl: "" # do not change
+url: "https://rajraghuwansh.github.io"
+markdown: kramdown
+include:
+  - README.md

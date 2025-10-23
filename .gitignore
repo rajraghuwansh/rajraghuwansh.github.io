@@ -1,0 +1,14 @@
+# Ignore Jekyll build output
+_site/
+
+# Ignore Ruby/Bundler artifacts
+.bundle/
+vendor/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs, temp files
+*.log
+*.tmp
