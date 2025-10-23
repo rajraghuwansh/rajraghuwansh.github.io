@@ -1,30 +1,40 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Raghuwansh — Personal Site</title>
-<link rel="stylesheet" href="/assets/css/site.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raghuwansh — Personal Site</title>
+  <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container">
     <h1>Raghuwansh</h1>
-    <p class="subtitle">PhD student — Geometrical and Topological Deep learning, Mathematics behind them and its interdisciplinary applications &amp; Math</p>
+    <p class="subtitle">PhD student — Geometrical and Topological Deep Learning, Mathematics, and Interdisciplinary AI Applications</p>
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
+      <a href="/about">About</a>
+      <a href="/projects">Projects</a>
+      <a href="/blog">Blog</a>
     </nav>
   </div>
 </header>
 
 <main class="container">
 
+  <section id="intro">
+    {% assign home_page = site.pages | where: "title", "Home" | first %}
+    {% if home_page %}
+      {{ home_page.content | markdownify }}
+    {% else %}
+      <p>Welcome to my personal website. I’m a PhD student passionate about AI, Mathematics, and their intersection.</p>
+    {% endif %}
+  </section>
 
   <section id="contact">
     <h2>Contact</h2>
+    <p>Email: <a href="mailto:raghuwansh.rajm@gmail.com">raghuwansh.rajm@gmail.com</a></p>
     <ul>
-       <li><a href="mailto:raghuwansh.rajm@gmail.com">E-mail</a></li>
       <li><a href="https://github.com/rajraghuwansh">GitHub</a></li>
       <li><a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a></li>
     </ul>
@@ -36,43 +46,8 @@
   <div class="container">© <span id="year"></span> Raghuwansh</div>
 </footer>
 
-<!-- Marked.js -->
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
-async function loadREADMESections() {
-  try {
-    const response = await fetch('README.md');
-    if (!response.ok) throw new Error('README.md not found');
-    const text = await response.text();
-
-    // Split README by headings like "## About"
-    const sections = {};
-    let current = null;
-    text.split('\n').forEach(line => {
-      const match = line.match(/^##\s+(.*)/);
-      if (match) {
-        current = match[1].trim().toLowerCase();
-        sections[current] = '';
-      } else if (current) {
-        sections[current] += line + '\n';
-      }
-    });
-
-    // Insert parsed markdown into matching sections
-    if (sections['about'])
-      document.getElementById('about-content').innerHTML = marked.parse(sections['about']);
-    if (sections['education'])
-      document.getElementById('education-content').innerHTML = marked.parse(sections['education']);
-    if (sections['projects'])
-      document.getElementById('projects-content').innerHTML = marked.parse(sections['projects']);
-  } catch (err) {
-    document.getElementById('about-content').innerHTML = '<p>Failed to load README.md</p>';
-  }
-}
-
-loadREADMESections();
-document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
