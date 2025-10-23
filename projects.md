@@ -1,7 +1,6 @@
 
 ## Projects
 
-## Projects
 
 ### **Graph Neural Network for Finite Element Analysis**  
 - Built a **Graph Neural Network (GNN)**-based surrogate model to accelerate parameter search in **Finite Element Analysis (FEA)**.  
