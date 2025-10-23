@@ -53,7 +53,7 @@
 
 ---
 
-## Education**
+## Education
 
 ### **Double MSc in Data Science and Business Analytics**  
 **CentraleSupélec & ESSEC Business School, Paris, France**  
