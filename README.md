@@ -1,6 +1,7 @@
 
 ## About
----a
+
+
 ### Machine Learning Engineer @ Stellantis (Jun2023 - Sep2025)   
 - Designed and implemented **end-to-end MLOps pipelines** using **PySpark** and **MLflow** in **Databricks**.  
 - Optimized code for performance and scalability, ensuring seamless integration with production systems.  
