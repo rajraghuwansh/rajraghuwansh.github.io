@@ -34,6 +34,6 @@ jobs:
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./_site
-          external_repository: yourusername/rajraghuwansh.github.io
+          external_repository: rajraghuwansh/rajraghuwansh.github.io
           destination_branch: main
           clean: true
