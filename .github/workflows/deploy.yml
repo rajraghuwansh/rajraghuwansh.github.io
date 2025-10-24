@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to public repo
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./_site
           external_repository: yourusername/rajraghuwansh.github.io
           destination_branch: main
