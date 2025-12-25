@@ -7,22 +7,42 @@
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1><a href="/">Home</a></h1>
-    </div>
-  </header>
 
-  <main class="container">
+<header class="site-header">
+  <div class="container">
+    <h1>Raghuwansh</h1>
+    <p class="subtitle">
+      PhD student — Geometrical and Topological Deep Learning, Mathematics, and Interdisciplinary AI Applications
+    </p>
+    <nav>
+      <a href="/about">About</a>
+      <a href="/publications">Publications</a>
+      <a href="/blog">Blog</a>
+      <a href="/cv">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  {% if page.hero %}
+  <section class="hero">
+    {{ page.hero }}
+  </section>
+  {% endif %}
+
+  <section class="page-content">
     {{ content }}
-  </main>
+  </section>
 
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> Raghuwansh</div>
-  </footer>
+</main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<footer class="site-footer">
+  <div class="container">© <span id="year"></span> Raghuwansh</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

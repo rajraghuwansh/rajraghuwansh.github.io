@@ -1,58 +1,20 @@
 ---
+layout: default
 title: Home
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Raghuwansh RAJ — Personal Site</title>
-  <link rel="stylesheet" href="/assets/css/site.css">
-</head>
-<body>
+<section id="intro">
+  <h2>Welcome!</h2>
+  <p>
+    I’m <strong>Raghuwansh</strong>, a PhD student at the University of Luxembourg exploring Geometrical and Topological Deep Learning.
+  </p>
+</section>
 
-<header class="site-header">
-  <div class="container">
-    <h1>Raghuwansh</h1>
-    <p class="subtitle">
-      PhD student — Geometrical and Topological Deep Learning, Mathematics, and Interdisciplinary AI Applications
-    </p>
-    <nav>
-      <a href="/about">About</a>
-      <a href="/publications">Publications</a>
-      <a href="/blog">Blog</a>
-      <a href="/CV.pdf">CV</a>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-
-  <section id="intro">
-    {% capture intro %}
-      {% include_relative README.md %}
-    {% endcapture %}
-    {{ intro | markdownify }}
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li><a href="https://github.com/rajraghuwansh">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/raghuwansh/">LinkedIn</a></li>
-      <li><a href="mailto:raghuwansh.rajm@gmail.com">E-mail</a></li>
-    </ul>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">© <span id="year"></span> Raghuwansh</div>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
-</html>
+<section id="contact">
+  <h2>Contact</h2>
+  <ul>
+    <li><a href="https://github.com/rajraghuwansh">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/raghuwansh/">LinkedIn</a></li>
+    <li><a href="mailto:raghuwansh.rajm@gmail.com">E-mail</a></li>
+  </ul>
+</section>
