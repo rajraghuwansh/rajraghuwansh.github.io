@@ -7,14 +7,14 @@ permalink: /blog/
 ## Blog
 
 Welcome! 👋  
-This page is a gateway to my writing on research, ideas, and reflections at the intersection of **geometry, topology, and deep learning**.
+This page is a gateway to my writing on research, my interests, and reflections at the intersection of **geometry, topology, and deep learning**.
 
-I’m **Raghuwansh**, a PhD student at the **University of Luxembourg**, exploring the mathematical foundations of modern AI. Through my blog, I share insights on:
+I’m **Raghuwansh**, a PhD student at the **University of Luxembourg**, exploring the mathematical foundations of geometrical Deep learning. Through my blog, I share insights on:
 
-- Geometrical & Topological Deep Learning  
-- Mathematical perspectives on neural networks  
-- Research notes, intuitions, and open questions  
-- Occasional thoughts on academia and learning  
+- Geometrical & Topological Deep Learning Architectures
+- Mathematical perspectives on GDL/TDL  
+- Interdisciplinary applications of deep learning  in Physics, Biology, Chemistry and Material Science  
+- Occasional thoughts on Philosophy, Existence, Spirituality, Consciousness etc
 
 ### ✍️ Read my blog
 You can find all my blog posts here:
@@ -24,5 +24,3 @@ You can find all my blog posts here:
 *(The blog is regularly updated with research-driven content and exploratory notes.)*
 
 ---
-
-Click on the links above to explore **About**, **Projects**, and **Blog**.
