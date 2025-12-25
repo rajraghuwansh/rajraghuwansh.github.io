@@ -5,8 +5,9 @@ _site/
 .bundle/
 vendor/
 
-# Ignore system files
+# Ignore macos files
 .DS_Store
+**/.DS_Store
 Thumbs.db
 
 # Ignore logs, temp files
