@@ -11,7 +11,7 @@ permalink: /projects/
 - Built a **Graph Neural Network (GNN)**-based surrogate model to accelerate parameter search in **Finite Element Analysis (FEA)**.  
 - Achieved **99.3% accuracy** on simulation data, enabling faster exploration of pressure and temperature parameters.
 
-![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)
+![Link prediction in Network](/assets/img/link-graph-example.png)
 
 ### **Link Prediction in Citation Networks**  
 - Predicted missing edges in citation networks using **Graph Neural Networks (GNNs)** and semantic information.  
