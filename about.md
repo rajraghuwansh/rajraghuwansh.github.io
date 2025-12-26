@@ -14,33 +14,37 @@ Previously, I worked in industry as a **Machine Learning Engineer** and **Data S
 
 ## Experience
 
-| Date | Experience |
-|------|------------|
-| **Jun 2023 – Sep 2025** | **Stellantis**, Europe  
+**Jun 2023 – Sep 2025**  
+**Stellantis**, Europe  
 Machine Learning Engineer  
-• Designed and deployed end-to-end **MLOps pipelines** using PySpark, MLflow, and Databricks  
-• Optimized large-scale data processing workflows for performance and scalability  
-• Collaborated with cross-functional teams to productionize ML models |
-| **Jun 2020 – Aug 2021** | **ZestMoney**, India  
+- Designed and deployed end-to-end **MLOps pipelines** using PySpark, MLflow, and Databricks  
+- Optimized large-scale data processing workflows for performance and scalability  
+- Collaborated with cross-functional teams to productionize ML models  
+
+**Jun 2020 – Aug 2021**  
+**ZestMoney**, India  
 Data Scientist  
-• Developed credit risk, default prediction, and CLV models in the BNPL domain  
-• Worked closely with Credit and Risk teams on automated decision-making |
-| **Jul 2022 – Jan 2023** | **Amazon**, India  
+- Developed credit risk, default prediction, and CLV models in the BNPL domain  
+- Worked closely with Credit and Risk teams on automated decision-making  
+
+**Jul 2022 – Jan 2023**  
+**Amazon**, India  
 Business Intelligence Intern  
-• Reduced forecast processing time by **50%** through optimization and AWS deployment  
-• Built analytics tools using EC2, Streamlit, SageMaker, and QuickSight |
+- Reduced forecast processing time by **50%** through optimization and AWS deployment  
+- Built analytics tools using EC2, Streamlit, SageMaker, and QuickSight  
 
 ---
 
 ## Education
 
-| Date | Education |
-|------|-----------|
-| **2021 – 2023** | **CentraleSupélec & ESSEC Business School**, Paris, France  
+**2021 – 2023**  
+**CentraleSupélec & ESSEC Business School**, Paris, France  
 Double MSc in Data Science and Business Analytics (**CGPA: 15.35/20**)  
-• Deep learning: MLPs, CNNs, GNNs  
-• Interdisciplinary research in AI, Finance, and Marketing |
-| **2016 – 2020** | **Indian Institute of Technology (IIT) BHU**, Varanasi, India  
+- Deep learning models: MLPs, CNNs, GNNs  
+- Interdisciplinary research in AI, Finance, and Marketing  
+
+**2016 – 2020**  
+**Indian Institute of Technology (IIT) BHU**, Varanasi, India  
 Bachelor of Engineering in Mathematics (**CGPA: 8.60/10**)  
-• Coursework: Machine Learning, Optimization, FEM, Mathematical Modeling  
-• B.Tech Project: Landslide Susceptibility Modeling using ML |
+- Coursework: Machine Learning, Optimization, FEM, Mathematical Modeling  
+- B.Tech Project: Landslide Susceptibility Modeling using ML  
