@@ -6,8 +6,7 @@ permalink: /about/
 
 ## About
 
-I am a PhD student at the **University of Luxembourg**, working on **Geometrical and Topological Deep Learning** and the **mathematical foundations of artificial intelligence**. My research lies at the intersection of deep learning, geometry, topology, and theory.
-
+I am a PhD student at the **University of Luxembourg**, working on **Geometrical and Topological Deep Learning** and the **mathematical foundations of artificial intelligence**. My research lies at the intersection of deep learning, geometry, topology, and its interdisciplinary applications.
 Previously, I worked in industry as a **Machine Learning Engineer** and **Data Scientist**, building scalable machine learning systems and applying data-driven methods to problems in finance, mobility, and forecasting.
 
 ---
