@@ -49,29 +49,29 @@ body {
 
 .hero-image {
   width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  height: 400px; /* rectangular */
   object-fit: cover;
   border: 4px solid #eee;
   margin-bottom: 2rem;
 }
 
-.social-links {
+.hero-info {
   list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  padding: 0;
+  text-align: center;
 }
 
-.social-links li a {
+.hero-info li a {
   text-decoration: none;
   color: #007acc;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
-.social-links li a:hover {
+.hero-info li a:hover {
   color: #005f99;
 }
 
@@ -120,7 +120,7 @@ body {
 
   .hero-image {
     width: 200px;
-    height: 200px;
+    height: 280px;
   }
 
   .hero-right h1 {
@@ -131,9 +131,7 @@ body {
     font-size: 1rem;
   }
 
-  .social-links {
-    flex-direction: row;
-    gap: 1.5rem;
-    margin-top: 1rem;
+  .hero-info {
+    gap: 0.5rem;
   }
 }
