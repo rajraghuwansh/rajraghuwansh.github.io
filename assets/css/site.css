@@ -1,127 +1,6 @@
 /* =========================
-   About Page Layout
+   General Styles
    ========================= */
-
-.about-page {
-  max-width: 900px;      /* same as homepage */
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-
-/* Section spacing */
-.about-page h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 1.2rem;
-}
-
-/* Entry layout (date left, content right) */
-.entry {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Date column */
-.entry .date {
-  min-width: 140px;
-  font-weight: 600;
-  color: #bdbdbd;
-  text-align: right;
-  flex-shrink: 0;
-}
-
-/* Content column */
-.entry .content {
-  flex: 1;
-}
-
-/* Bullet cleanup */
-.entry ul {
-  margin-top: 0.4rem;
-  margin-bottom: 0;
-}
-
-.entry li {
-  margin-bottom: 0.3rem;
-}
-
-/* Mobile fallback */
-@media (max-width: 700px) {
-  .entry {
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  .entry .date {
-    text-align: left;
-    min-width: auto;
-  }
-}
-
-
-/* Container spacing */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-
-/* Update-style blocks */
-h2 + p,
-h2 + ul {
-  margin-top: 1.2rem;
-}
-
-/* Date (left column) */
-strong {
-  display: inline-block;
-  width: 130px;          /* controls date column width */
-  font-weight: 600;
-  color: #cfcfcf;
-  vertical-align: top;
-}
-
-/* Content block (right column) */
-strong + br + strong,
-strong + br {
-  margin-left: 0;
-}
-
-/* Text following the date */
-strong + br ~ * {
-  margin-left: 130px;    /* must match date width */
-}
-
-/* Bullet styling */
-ul {
-  margin-top: 0.3rem;
-  margin-bottom: 1.2rem;
-}
-
-li {
-  margin-bottom: 0.4rem;
-}
-
-/* Links (match screenshot tone) */
-a {
-  color: #8b8cff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Dark background compatibility */
-body {
-  background-color: #111;
-  color: #e5e5e5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Helvetica, Arial, sans-serif;
-}
-
-
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -129,6 +8,18 @@ body {
   color: #222;
   background-color: #fff;
   text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: #007acc;  /* all links blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Header */
@@ -144,25 +35,30 @@ body {
 }
 
 .nav-container a {
-  text-decoration: none;
-  color: #222;
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.2s ease;
 }
 
-.nav-container a:hover {
-  color: #007acc;
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #555;
 }
 
-/* Hero Section */
+/* =========================
+   Home Hero Section
+   ========================= */
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 3rem;             /* smaller gap between left and right */
-  padding: 5rem 1rem;
+  gap: 2.5rem;  /* reduce gap */
+  padding: 4rem 1rem;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -173,41 +69,46 @@ body {
   align-items: center;
 }
 
-/* Adjusted profile image size */
 .hero-image {
-  width: 200px;          /* smaller width */
-  height: auto;          /* height adjusts to match right-side text */
-  max-height: 300px;     /* ensure it doesn't get too tall */
+  width: 180px;      /* smaller */
+  height: auto;
+  max-height: 280px;
   object-fit: cover;
   border: 4px solid #eee;
-  margin-bottom: 1.2rem; /* smaller gap below image */
+  margin-bottom: 1rem;
 }
 
-/* Hero info links */
 .hero-info {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;          /* smaller vertical gap */
+  gap: 0.25rem;        /* reduce vertical gap */
   text-align: center;
+  font-size: 0.85rem;  /* smaller font */
+}
+
+.hero-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .hero-info li a {
-  text-decoration: none;
-  color: #222;
   font-weight: 500;
-  font-size: 0.9rem;     /* smaller font */
-  padding: 2px 4px;
+  color: #007acc;
   border-left: 2px solid transparent;
+  padding-left: 0;
   transition: all 0.3s ease;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .hero-info li a:hover {
-  color: #007acc;
   border-left: 2px solid #007acc;
-  padding-left: 5px;
+  padding-left: 2px;
+}
+
+.icon {
+  font-size: 0.85rem;
 }
 
 .hero-right {
@@ -215,24 +116,64 @@ body {
 }
 
 .hero-right h1 {
-  font-size: 2.8rem;
+  font-size: 2rem;    /* smaller to fit layout */
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .hero-right p {
-  font-size: 1.2rem;
+  font-size: 1rem;    /* smaller */
   color: #333;
 }
 
-/* Page content */
-.page-content {
-  max-width: 700px;
+/* =========================
+   About / Experience / Education
+   ========================= */
+
+.about-page, main {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 1rem;
-  font-size: 1.1rem;
-  color: #333;
-  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.about-page h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.entry .date {
+  min-width: 140px;
+  font-weight: 600;
+  color: #007acc;   /* bold text blue */
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.entry .content {
+  flex: 1;
+}
+
+.entry ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.entry li {
+  margin-bottom: 0.3rem;
+}
+
+strong {
+  color: #007acc;   /* make strong blue */
+  display: inline-block;
+  width: 130px;
+  vertical-align: top;
 }
 
 /* Responsive */
@@ -250,64 +191,28 @@ body {
   }
 
   .hero-right h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .hero-right p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .hero-info {
-    gap: 0.3rem;
+    gap: 0.2rem;
   }
-}
 
-/* Page content */
-.page-content {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-  font-size: 1.1rem;
-  color: #333;
-  text-align: center;
-}
-
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  border-top: 1px solid #eee;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero {
+  .entry {
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
+    gap: 0.4rem;
   }
 
-  .hero-image {
-    width: 200px;
-    height: 280px;
+  .entry .date {
+    text-align: left;
+    min-width: auto;
   }
 
-  .hero-right h1 {
-    font-size: 2rem;
-  }
-
-  .hero-right p {
-    font-size: 1rem;
-  }
-
-  .hero-info {
-    gap: 0.5rem;
-  }
-
-   strong {
+  strong {
     width: auto;
     display: block;
     margin-bottom: 0.2rem;
