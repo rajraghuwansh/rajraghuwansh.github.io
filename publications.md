@@ -11,7 +11,7 @@ permalink: /publications/
 - Built a **Graph Neural Network (GNN)**-based surrogate model to accelerate parameter search in **Finite Element Analysis (FEA)**.  
 - Achieved **99.3% accuracy** on simulation data, enabling faster exploration of pressure and temperature parameters.
 
-![Link prediction in Network](/assets/img/link-graph-example.png)
+![Link prediction in Network](/assets/images/link-graph-example.png)
 
 ### **Link Prediction in Citation Networks**  
 - Predicted missing edges in citation networks using **Graph Neural Networks (GNNs)** and semantic information.  
@@ -36,7 +36,7 @@ permalink: /publications/
 - Developed a **Python-based** strategy for discovering optimal EEG bands using **decision trees**.  
 - Outperformed traditional band boundaries by a factor of two, enabling better characterization of brain activity.
 
-![Bike Study](/assets/img/bike_study.jpeg)
+![Bike Study](/assets/images/bike_study.jpeg)
 
 ---
 
