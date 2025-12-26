@@ -66,13 +66,19 @@ body {
 
 .hero-info li a {
   text-decoration: none;
-  color: #007acc;
+  color: #222;          /* dark gray text */
   font-weight: 500;
-  transition: color 0.2s ease;
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-left: 3px solid transparent; /* subtle style */
+  transition: all 0.3s ease;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .hero-info li a:hover {
-  color: #005f99;
+  color: #007acc;          /* highlight color */
+  border-left: 3px solid #007acc;  /* subtle indicator */
+  padding-left: 5px;
 }
 
 .hero-right {
