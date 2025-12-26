@@ -13,30 +13,12 @@
     <a href="/about">About</a>
     <a href="/publications">Publications</a>
     <a href="/blog">Blog</a>
-    <a href="/cv.pdf">CV</a>
+    <a href="/cv">CV</a>
   </nav>
 </header>
 
 <main>
-  {% if page.hero %}
-  <section class="hero container">
-    <div class="hero-left">
-      <img src="/assets/images/profile.jpg" alt="Raghuwansh" class="hero-image">
-      <ul class="social-links">
-        <li><a href="mailto:raghuwansh.rajm@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/raghuwansh/">LinkedIn</a></li>
-        <li><a href="https://github.com/rajraghuwansh">GitHub</a></li>
-      </ul>
-    </div>
-    <div class="hero-right">
-      {{ page.hero }}
-    </div>
-  </section>
-  {% endif %}
-
-  <section class="page-content">
-    {{ content }}
-  </section>
+  {{ content }}
 </main>
 
 <footer class="site-footer">
