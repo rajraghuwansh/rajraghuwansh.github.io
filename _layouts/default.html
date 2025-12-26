@@ -3,26 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{{ page.title }} — Raghuwansh</title>
+  <title>{{ page.title }} — Raghuwansh RAJ</title>
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1><a href="/">Home</a></h1>
+
+<header class="site-header">
+  <div class="container nav-container">
+    <nav>
+      <a href="/about">About</a>
+      <a href="/publications">Publications</a>
+      <a href="/blog">Blog</a>
+      <a href="/CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  {% if page.hero %}
+  <section class="hero container">
+    <img src="/assets/img/profile.jpg" alt="Raghuwansh" class="hero-image">
+    <div class="hero-text">
+      {{ page.hero }}
     </div>
-  </header>
+  </section>
+  {% endif %}
 
-  <main class="container">
+  <section class="page-content container">
     {{ content }}
-  </main>
+  </section>
 
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> Raghuwansh</div>
-  </footer>
+</main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<footer class="site-footer">
+  <div class="container">© <span id="year"></span> Raghuwansh</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
