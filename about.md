@@ -4,7 +4,9 @@ layout: default
 permalink: /about/
 ---
 
-## About
+<section class="about-page">
+
+## About Me
 
 I am a PhD student at the **University of Luxembourg**, working on **Geometrical and Topological Deep Learning** and the **mathematical foundations of artificial intelligence**. My research lies at the intersection of deep learning, geometry, topology, and theory.
 
@@ -14,37 +16,61 @@ Previously, I worked in industry as a **Machine Learning Engineer** and **Data S
 
 ## Experience
 
-**Jun 2023 – Sep 2025**  
-**Stellantis**, Europe  
-Machine Learning Engineer  
-- Designed and deployed end-to-end **MLOps pipelines** using PySpark, MLflow, and Databricks  
-- Optimized large-scale data processing workflows for performance and scalability  
-- Collaborated with cross-functional teams to productionize ML models  
+<div class="entry">
+  <div class="date">Jun 2023 – Sep 2025</div>
+  <div class="content">
+    <strong>Stellantis</strong>, Europe<br>
+    Machine Learning Engineer
+    <ul>
+      <li>Designed end-to-end MLOps pipelines using PySpark, MLflow, and Databricks</li>
+      <li>Optimized large-scale data processing workflows</li>
+      <li>Deployed ML models to production</li>
+    </ul>
+  </div>
+</div>
 
-**Jun 2020 – Aug 2021**  
-**ZestMoney**, India  
-Data Scientist  
-- Developed credit risk, default prediction, and CLV models in the BNPL domain  
-- Worked closely with Credit and Risk teams on automated decision-making  
+<div class="entry">
+  <div class="date">Jun 2020 – Aug 2021</div>
+  <div class="content">
+    <strong>ZestMoney</strong>, India<br>
+    Data Scientist
+    <ul>
+      <li>Built credit risk and default prediction models</li>
+      <li>Worked with Credit and Risk teams on decision systems</li>
+    </ul>
+  </div>
+</div>
 
-**Jul 2022 – Jan 2023**  
-**Amazon**, India  
-Business Intelligence Intern  
-- Reduced forecast processing time by **50%** through optimization and AWS deployment  
-- Built analytics tools using EC2, Streamlit, SageMaker, and QuickSight  
+<div class="entry">
+  <div class="date">Jul 2022 – Jan 2023</div>
+  <div class="content">
+    <strong>Amazon</strong>, India<br>
+    Business Intelligence Intern
+    <ul>
+      <li>Reduced forecast processing time by 50%</li>
+      <li>Built analytics tools using AWS and Streamlit</li>
+    </ul>
+  </div>
+</div>
 
 ---
 
 ## Education
 
-**2021 – 2023**  
-**CentraleSupélec & ESSEC Business School**, Paris, France  
-Double MSc in Data Science and Business Analytics (**CGPA: 15.35/20**)  
-- Deep learning models: MLPs, CNNs, GNNs  
-- Interdisciplinary research in AI, Finance, and Marketing  
+<div class="entry">
+  <div class="date">2021 – 2023</div>
+  <div class="content">
+    <strong>CentraleSupélec & ESSEC</strong>, Paris, France<br>
+    Double MSc in Data Science and Business Analytics (CGPA: 15.35/20)
+  </div>
+</div>
 
-**2016 – 2020**  
-**Indian Institute of Technology (IIT) BHU**, Varanasi, India  
-Bachelor of Engineering in Mathematics (**CGPA: 8.60/10**)  
-- Coursework: Machine Learning, Optimization, FEM, Mathematical Modeling  
-- B.Tech Project: Landslide Susceptibility Modeling using ML  
+<div class="entry">
+  <div class="date">2016 – 2020</div>
+  <div class="content">
+    <strong>IIT BHU</strong>, Varanasi, India<br>
+    Bachelor of Engineering in Mathematics (CGPA: 8.60/10)
+  </div>
+</div>
+
+</section>
