@@ -1,6 +1,64 @@
 /* =========================
-   Updates / Timeline Layout
+   About Page Layout
    ========================= */
+
+.about-page {
+  max-width: 900px;      /* same as homepage */
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Section spacing */
+.about-page h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Entry layout (date left, content right) */
+.entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Date column */
+.entry .date {
+  min-width: 140px;
+  font-weight: 600;
+  color: #bdbdbd;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Content column */
+.entry .content {
+  flex: 1;
+}
+
+/* Bullet cleanup */
+.entry ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.entry li {
+  margin-bottom: 0.3rem;
+}
+
+/* Mobile fallback */
+@media (max-width: 700px) {
+  .entry {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .entry .date {
+    text-align: left;
+    min-width: auto;
+  }
+}
+
 
 /* Container spacing */
 main {
@@ -259,4 +317,3 @@ body {
     margin-left: 0;
   }
 }
-
