@@ -6,7 +6,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: #222;
-  background-color: #fff4cc; /* warmer soft yellow */
+  background-color: hsl(48, 56%, 75%); /* warmer soft yellow */
   margin: 0;
 }
 
@@ -25,6 +25,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #007acc;
 }
 
 /* =========================
@@ -38,7 +39,7 @@ a:hover {
 
 .nav-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
@@ -83,7 +84,7 @@ a:hover {
   gap: 2.5rem;
   align-items: flex-start;
 
-  background-color: #ffffff;
+  background-color: transparent;
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
