@@ -1,15 +1,25 @@
+/* =========================
+   Base / Reset
+   ========================= */
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: #222;
-  background-color: #fff9e6; /* soft warm yellow */
+  background-color: #fff4cc; /* warmer soft yellow */
   margin: 0;
-  margin: 0;
+}
+
+/* Center all page content */
+.site-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 /* Links */
 a {
-  color: #a2c8e2ea;  /* all links blue */
+  color: #222;
   text-decoration: none;
 }
 
@@ -17,94 +27,98 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header */
+/* =========================
+   Header / Navigation
+   ========================= */
+
 .site-header {
   padding: 1.5rem 0;
-  border-bottom: 1px solid hsla(349, 68%, 58%, 0.803);
+  border-bottom: 1px solid hsla(349, 68%, 58%, 0.8);
 }
 
 .nav-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
-.nav-container a {
-  text-decoration: none;
-  color: #4a3f00;
-  font-weight: 500;
+/* Home button */
+.home-link {
+  font-weight: 700;
+  font-size: 1rem;
+  background: none !important;
+  padding: 6px 0;
+}
+
+/* Navigation buttons */
+.nav-container a:not(.home-link) {
   font-size: 0.95rem;
+  font-weight: 500;
   padding: 6px 14px;
   border-radius: 6px;
   background-color: #ffe08a;
-  transition: all 0.2s ease;
+  color: #4a3f00;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.nav-container a:hover {
+.nav-container a:not(.home-link):hover {
   background-color: #f1c232;
   color: #2d2600;
 }
 
+/* =========================
+   Hero Section (Home)
+   ========================= */
 
-  .hero {
+.hero {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 3rem 2.5rem;
+
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+
   background-color: #ffffff;
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2.5rem;
-  padding: 4rem 1rem;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .hero-left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  /* left-align hero info */
+  align-items: flex-start;
 }
 
 .hero-image {
-  width: 180px;      /* smaller */
-  height: auto;
+  width: 180px;
   max-height: 280px;
   object-fit: cover;
   border: 4px solid #eee;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
+/* Info under image */
 .hero-info {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;          /* small vertical spacing */
-  font-size: 0.9rem;
+
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.82rem;
 }
 
 .hero-info li {
   display: flex;
   align-items: center;
-  gap: 0.3rem;          /* icon + text spacing */
+  gap: 0.4rem;
+  white-space: nowrap; /* force single line */
+  margin-bottom: 0.15rem;
 }
 
-.hero-info li a {
-  font-weight: 500;
-  color: #007acc;
-  border-left: 2px solid transparent;
-  padding-left: 0;
-  transition: all 0.3s ease;
-}
-
-.hero-info li a:hover {
-  border-left: 2px solid #007acc;
-  padding-left: 2px;
-}
-
-.hero-info li .icon {
-  font-size: 0.85rem;
+.hero-info .icon {
+  font-size: 0.75rem;
 }
 
 .hero-right {
@@ -112,43 +126,44 @@ a:hover {
 }
 
 .hero-right h1 {
-  font-size: 2rem;    /* fits layout */
+  font-size: 1.9rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .hero-right p {
-  font-size: 1rem;    /* fits layout */
+  font-size: 0.98rem;
   color: #333;
 }
 
 /* =========================
-   About / Experience / Education
+   Page Content (About, etc.)
    ========================= */
 
-.about-page, main {
+main,
+.about-page {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
 
 .about-page h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 1.2rem;
+  margin: 2.5rem 0 1.2rem;
 }
+
+/* Experience / Education entries */
 
 .entry {
   display: flex;
-  align-items: flex-start;
   gap: 2rem;
   margin-bottom: 1.5rem;
 }
 
 .entry .date {
   min-width: 140px;
-  font-weight: 600;
-  color: #007acc;   /* bold text blue */
   text-align: right;
+  font-weight: 600;
+  color: #007acc;
   flex-shrink: 0;
 }
 
@@ -157,8 +172,7 @@ a:hover {
 }
 
 .entry ul {
-  margin-top: 0.4rem;
-  margin-bottom: 0;
+  margin: 0.4rem 0 0;
 }
 
 .entry li {
@@ -166,19 +180,23 @@ a:hover {
 }
 
 strong {
-  color: #007acc;   /* make strong blue */
-  display: inline-block;
-  width: 130px;
-  vertical-align: top;
+  color: #007acc;
 }
 
-/* Responsive */
+/* =========================
+   Responsive
+   ========================= */
+
 @media (max-width: 768px) {
+  .nav-container {
+    flex-wrap: wrap;
+  }
+
   .hero {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
     text-align: center;
+    gap: 1.5rem;
   }
 
   .hero-image {
@@ -194,11 +212,6 @@ strong {
     font-size: 0.95rem;
   }
 
-  .hero-info {
-    gap: 0.15rem;
-    align-items: flex-start;
-  }
-
   .entry {
     flex-direction: column;
     gap: 0.4rem;
@@ -207,15 +220,5 @@ strong {
   .entry .date {
     text-align: left;
     min-width: auto;
-  }
-
-  strong {
-    width: auto;
-    display: block;
-    margin-bottom: 0.2rem;
-  }
-
-  strong + br ~ * {
-    margin-left: 0;
   }
 }
