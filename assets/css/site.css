@@ -47,24 +47,27 @@ a:hover {
 .home-link {
   font-weight: 700;
   font-size: 1rem;
-  background: none !important;
-  padding: 6px 0;
+  color: #222;
+}
+
+.home-link:hover {
+  text-decoration: underline;
 }
 
 /* Navigation buttons */
 .nav-container a:not(.home-link) {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+
   font-size: 0.95rem;
   font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 6px;
-  background-color: #ffe08a;
-  color: #4a3f00;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  color: #222;
+  transition: color 0.2s ease;
 }
 
 .nav-container a:not(.home-link):hover {
-  background-color: #f1c232;
-  color: #2d2600;
+  color: #007acc;
 }
 
 /* =========================
