@@ -1,38 +1,39 @@
+# ============================================================================
+# Hugo build output and caches
+# ============================================================================
 .hugo_cache/
+.hugo_build.lock
+hugo_stats.json
+public/
+resources/
 
 # ============================================================================
-# Hugo Site .gitignore
+# Node / frontend tooling
 # ============================================================================
-public/
-# Hugo resources (processed assets)
-resources/
-# Hugo build lock
-.hugo_build.lock
-# Hugo stats
-hugo_stats.json
-# Auto-generated JS config
-**/assets/jsconfig.json
 node_modules/
+**/assets/jsconfig.json
+pagefind/
+static/pagefind/
+
+# ============================================================================
+# Environment files
+# ============================================================================
 .env
 .env.local
 .env.*.local
 
-# Pagefind search index
-pagefind/
-static/pagefind/
-
-
-# macOS
+# ============================================================================
+# OS and editor noise
+# ============================================================================
 .DS_Store
 .DS_Store?
 ._*
-
-# Windows
 Thumbs.db
 Desktop.ini
-# Linux
 *~
 
+# ============================================================================
+# Logs
+# ============================================================================
 *.log
 npm-debug.log*
-.gitignore
