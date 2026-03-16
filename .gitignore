@@ -33,5 +33,6 @@ Desktop.ini
 
 *.log
 npm-debug.log*
-
+.
+.hugo_cache/
 .gitignore
