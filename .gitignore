@@ -1,14 +1,35 @@
-# Ignore Jekyll build output
-_site/
+# ============================================================================
+# Hugo Site .gitignore
+# ============================================================================
+public/
+# Hugo resources (processed assets)
+resources/
+# Hugo build lock
+.hugo_build.lock
+# Hugo stats
+hugo_stats.json
+# Auto-generated JS config
+**/assets/jsconfig.json
+node_modules/
+.env
+.env.local
+.env.*.local
 
-# Ignore Ruby/Bundler artifacts
-.bundle/
-vendor/
+# Pagefind search index
+pagefind/
+static/pagefind/
 
-# Ignore system files
+
+# macOS
 .DS_Store
-Thumbs.db
+.DS_Store?
+._*
 
-# Ignore logs, temp files
+# Windows
+Thumbs.db
+Desktop.ini
+# Linux
+*~
+
 *.log
-*.tmp
+npm-debug.log*

@@ -1,0 +1,163 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+
+name:
+  display: Raghuwansh Raj
+  given: Raghuwansh
+  family: Raj
+  alternate: ''
+  pronunciation: ''
+  pronouns: he/him
+
+postnominals:
+  - PhD Student
+
+status:
+  icon: "☕️"
+
+role: PhD Student
+
+bio: |
+  I’m a PhD student at the University of Luxembourg, deep diving into the mathematical foundations of geometrical/topological deep learning. I am currently working under Professor Jun Pang.
+affiliations:
+  - name: University of Luxembourg
+    url: https://www.uni.lu/
+
+links:
+  - icon: at-symbol
+    url: mailto:raghuwansh.raj@uni.lu
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/rajraghuwansh
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/raghuwansh/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/
+
+interests:
+  - Geometrical & Topological Deep Learning
+  - Mathematical Foundations of GDL and TDL
+  - Non-Euclidean Deep Learning on Manifolds, Graphs, and Combinatorial Complexes
+  - Geometric Graph Neural Networks
+  - Equivariant Graph Neural Networks
+  - Expressive Power of GNNs
+  - Applications in Atomic Systems
+  - Drug Discovery
+  - Molecular Dynamics Simulations
+
+education:
+  - degree: PhD in Geometrical and Topological Deep Learning.
+    institution: FSTM, University of Luxembourg
+    start: 2025-09-01
+    end:  Current
+    summary: |
+      Research in Geometrical and Topological Deep Learning and its application in interdisciplinary domains such as drug discovery and molecular dynamics simulations. 
+      Aspects of  under the supervision of Professor Jun Pang.
+    button:
+      text: Download CV
+      url: /cv.pdf
+      icon: hero/arrow-down-tray
+
+  - degree: Double MSc in Data Science and Business Analytics.
+    institution: CentraleSupélec & ESSEC Business School, Paris, France
+    start: 2021-09-01
+    end: 2023-03-31
+    summary: |
+      CGPA: 15.35/20. Studied  machine learning and deep learning models including MLPs, CNNs, and GNNs and theri  mathematical foundations. Completed a thesis on the expressive power of GNNs and their applications in drug discovery, molecular dynamics simulations, and combinatorial optimization,  
+      interdisciplinary ml projects in Finance, Marketing.
+    button:
+      text: Dissertation
+      url: https://github.com/rajraghuwansh/CRP/blob/main/main.pdf
+      icon: hero/arrow-down-tray
+
+  - degree: Bachelor of Engineering minior in Mathematics.
+    institution: Indian Institute of Technology (IIT) BHU, Varanasi, India
+    start: 2016-07-01
+    end: 2020-05-31
+    summary: |
+      CGPA: 8.60/10. Coursework included Machine Learning, Optimization, FEM,
+      and Mathematical Modeling. B.Tech project on Landslide Susceptibility
+      Modeling using ML.
+    button:
+      text: Dissertation
+      url: https://github.com/rajraghuwansh/CRP/blob/main/BTPfinal.pdf
+      icon: hero/arrow-down-tray
+
+experience:
+  - role: Machine Learning Engineer
+    org: Stellantis, Europe
+    start: 2023-06-01
+    end: 2025-09-30
+    summary: |
+      Designed and deployed end-to-end MLOps pipelines using PySpark, MLflow,
+      and Databricks. Optimized large-scale data processing workflows for
+      performance and scalability, and collaborated with cross-functional teams
+      to productionize ML models.
+
+  - role: Business Intelligence Intern
+    org: Amazon, India
+    start: 2022-07-01
+    end: 2023-01-31
+    summary: |
+      Reduced forecast processing time by 50% through optimization and AWS
+      deployment. Built analytics tools using EC2, Streamlit, SageMaker,
+      and QuickSight.
+
+  - role: Data Scientist
+    org: ZestMoney, India
+    start: 2020-06-01
+    end: 2021-08-31
+    summary: |
+      Developed credit risk, default prediction, and customer lifetime value
+      models in the BNPL domain. Worked closely with Credit and Risk teams
+      on automated decision-making.
+
+skills:
+  - name: Technical Skills
+    items:
+      - label: Python
+        level: 5
+      - label: Machine Learning
+        level: 5
+      - label: Deep Learning
+        level: 5
+      - label: Graph Neural Networks
+        level: 5
+      - label: PySpark
+        level: 4
+      - label: MLflow
+        level: 4
+      - label: Databricks
+        level: 4
+      - label: AWS
+        level: 4
+
+  - name: Research & Communication
+    items:
+      - label: Academic Writing
+        level: 4
+      - label: Scientific Communication
+        level: 4
+      - label: Interdisciplinary Research
+        level: 4
+
+languages:
+  - name: English
+    level: 5
+    label: Fluent
+  - name: Hindi
+    level: 5
+    label: Native
+  - name: French
+    level: 2
+    label: Basic
+
+awards:
+  - title: 2nd Place Award
+    awarder: CentraleSupélec Data Science Kaggle Competition
+    date: "2022-02-01"
+    summary: >
+      Link Prediction in Citation Networks using Graph Neural Networks.
+      [View Winning Solution](https://raw.githubusercontent.com/rajraghuwansh/kaggle_MLNS2022_-Link_Prediction/main/data/MLNS_Kaggle.pdf)
+    icon: hero/trophy
